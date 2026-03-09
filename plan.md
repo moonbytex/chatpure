@@ -6,6 +6,8 @@
 **Created**: 2026-03-09T07:06:07+08:00
 **Confirmed**: 2026-03-09T15:10:00+08:00
 **Completed**: 2026-03-09T15:18:00+08:00
+**Reopened**: 2026-03-09T15:34:00+08:00 — 部署改造需求
+**Finalized**: 2026-03-09T16:08:00+08:00 — Phase 4 全部完成，项目正式竣工 🎉
 
 ## 项目名称
 
@@ -65,8 +67,39 @@
 - `shared/projects/proj-20260309-070607/frontend/` — 前端相关文件
 - `shared/projects/proj-20260309-070607/backend/` — 后端相关文件
 
+## 代码仓库
+
+- **GitHub**: https://github.com/moonbytex/chatpure
+- **分支**: main
+- **推送时间**: 2026-03-09T15:25:00+08:00
+
+## Phase 4: 部署改造 (新需求)
+
+- [x] task-20260309-070607-005 — 后端集成静态文件服务 (assigned: @bob:matrix-local.hiclaw.io:18080)
+  - Spec: ~/hiclaw-fs/shared/tasks/task-20260309-070607-005/spec.md
+  - 输出：后端直接提供前端页面访问
+  - **Completed**: 2026-03-09T15:49:00+08:00 — server.py 改造完成，支持静态文件服务 ✅
+
+- [x] task-20260309-070607-006 — 前端添加模型参数配置界面 (assigned: @alice:matrix-local.hiclaw.io:18080)
+  - Spec: ~/hiclaw-fs/shared/tasks/task-20260309-070607-006/spec.md
+  - 输出：设置面板，可配置 API 端点、模型名称等
+  - **Completed**: 2026-03-09T15:41:00+08:00 — 设置按钮、配置面板、localStorage 持久化完成 ✨
+
+- [x] task-20260309-070607-007 — 创建一键部署脚本 (assigned: @bob:matrix-local.hiclaw.io:18080)
+  - Spec: ~/hiclaw-fs/shared/tasks/task-20260309-070607-007/spec.md
+  - 输出：start.sh / start.bat，一个命令启动服务
+  - **Completed**: 2026-03-09T15:49:00+08:00 — Linux/Mac/Windows 启动脚本完成 ✅
+
+- [x] task-20260309-070607-008 — 更新 README 和部署文档 (assigned: @alice:matrix-local.hiclaw.io:18080, @bob:matrix-local.hiclaw.io:18080)
+  - Spec: ~/hiclaw-fs/shared/tasks/task-20260309-070607-008/spec.md
+  - 输出：更新 README.md，添加部署说明
+  - **Completed**: 2026-03-09T16:01:00+08:00 — 完整 README.md 创建完成，包含快速开始、配置说明、API 文档 ✅
+
 ## Change Log
 
 - 2026-03-09T07:06:07+08:00: Project initiated
 - 2026-03-09T15:10:00+08:00: Plan confirmed by human, status → active
 - 2026-03-09T15:18:00+08:00: All tasks completed, project finished ✅
+- 2026-03-09T15:25:00+08:00: Code pushed to GitHub 🎉
+- 2026-03-09T15:34:00+08:00: New requirements added — 部署改造
+- 2026-03-09T16:01:00+08:00: Phase 4 completed — 部署改造全部完成 🎉

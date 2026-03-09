@@ -1,6 +1,17 @@
-# 大模型对话后端 API
+# ChatPure 后端服务 🐍
 
-基于 Python 标准库 `http.server` 实现的轻量级 HTTP 服务，无框架依赖。
+基于 Python 标准库 `http.server` 实现的轻量级 HTTP 服务，零第三方依赖。
+
+## 功能特性
+
+- ✅ 静态文件服务 - 托管前端页面（`/` 访问前端）
+- ✅ `GET /health` - 健康检查端点
+- ✅ `POST /chat` - 对话端点，转发请求到大模型 API
+- ✅ CORS 支持（允许前端跨域请求）
+- ✅ 会话管理（支持多轮对话上下文）
+- ✅ 参数配置（model, temperature, max_tokens, system_prompt）
+- ✅ 错误处理和日志记录
+- ✅ 测试模式（未配置 API Key 时返回模拟回复）
 
 ## 功能特性
 
